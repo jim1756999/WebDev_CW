@@ -47,11 +47,6 @@ ul.topnav li.right {
     float: right;
 }
 
-@media screen and (max-width: 600px) {
-    ul.topnav li.right, ul.topnav li {
-        float: none;
-    }
-}
 
 .heading {
     height: auto;
@@ -66,4 +61,13 @@ p {
 
 table {
     margin-left: 4em;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, ul.topnav li {
+        float: none;
+    }
+    .heading {
+        margin-top: 7em;
+    }
 }
