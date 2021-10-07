@@ -1,10 +1,13 @@
 body {margin: 0;}
 
 ul.topnav {
-    list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    list-style-type: none;
     background-color: #333;
 }
 
@@ -15,6 +18,7 @@ ul.topnav h1 {
     text-align: center;
     color: white;
     margin-left: 1em;
+    margin-right: 1em;
     font-size: x-large;
 }
 
@@ -36,4 +40,19 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
+}
+
+.heading {
+    height: auto;
+    margin-top: 3em;
+    margin-left: 1em;
+}
+
+p {
+    height: auto;
+    margin-left: 4em;
+}
+
+table {
+    margin-left: 4em;
 }
