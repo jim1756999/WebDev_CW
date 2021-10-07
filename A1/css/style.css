@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul.topnav {
@@ -47,7 +48,6 @@ ul.topnav li.right {
     float: right;
 }
 
-
 .heading {
     height: auto;
     margin-top: 3em;
@@ -60,7 +60,7 @@ p {
 }
 
 table {
-    border:1px solid black;
+    border: 1px solid black;
     margin-left: 4em;
 }
 
@@ -74,6 +74,6 @@ table th {
         float: none;
     }
     .heading {
-        margin-top: 7em;
+        margin-top: 10em;
     }
 }
