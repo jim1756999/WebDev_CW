@@ -11,7 +11,8 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     list-style-type: none;
-    background-color: #333;
+    background-color: #E8E7E3;
+    box-shadow: 0px 5px 7px #DDD;
 }
 
 ul.topnav li {
@@ -21,15 +22,16 @@ ul.topnav li {
 ul.topnav h1 {
     display: block;
     text-align: center;
-    color: white;
+    color: #4E4D4C;
     margin-left: 1em;
     margin-right: 1em;
     font-size: x-large;
+    text-shadow: 1px 1px 3px #DDD;
 }
 
 ul.topnav li a {
     display: block;
-    color: white;
+    color: #4E4D4C;
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
@@ -37,11 +39,14 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #8B8B8B;
+    color: #E8E7E3;
 }
 
 ul.topnav li a.active {
-    background-color: #4CAF50;
+    background-color: #3F3F3F;
+    color: #E8E7E3;
+    box-shadow: 0 0 8px #8B8B8B;
 }
 
 ul.topnav li.right {
