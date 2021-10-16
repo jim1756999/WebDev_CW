@@ -75,10 +75,13 @@ table th {
 }
 
 @media screen and (max-width: 600px) {
+    ul.topnav {
+        position: relative;
+    }
     ul.topnav li.right, ul.topnav li {
         float: none;
     }
     .heading {
-        margin-top: 10em;
+        margin-top: 1em;
     }
 }
