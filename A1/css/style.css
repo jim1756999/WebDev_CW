@@ -83,11 +83,14 @@ li a.sidenav {
     margin-right: 15%;
     text-decoration: none;
     font-size: 1.2em;
+    transition-duration: 0.4s;
 }
 
 li a.sidenav:hover {
+    border-radius: 3px;
     background-color: #8B8B8B;
     color: #E8E7E3;
+    box-shadow: 0 0px 8px #8B8B8B;
     transition-duration: 0.4s;
 }
 
