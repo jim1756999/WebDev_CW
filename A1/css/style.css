@@ -3,7 +3,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #111;
     background-color: #FCFCFC;
+    animation: 0.5s body forwards ease-out;
+
 }
+
+/* 顶部工具栏 */
 
 ul.topnav {
     position: fixed;
@@ -16,6 +20,7 @@ ul.topnav {
     list-style-type: none;
     background-color: #E8E7E3;
     box-shadow: 0px 2px 3px #888;
+    animation: topnav 0.5s forwards ease-out;
 }
 
 ul.topnav li {
@@ -60,20 +65,22 @@ ul.topnav li.right {
     float: right;
 }
 
+/* 侧边工具栏 */
+
 ul.sidenav {
     list-style-type: none;
     margin: 0;
     padding-left: 1%;
-    padding-top: 2em;
+    padding-top: 8em;
     width: 20%;
     background-color: #f1f1f1;
     position: fixed;
-    top: 3em;
     left: 80%;
     height: 100%;
     overflow: auto;
     z-index: 99;
     box-shadow: 0 0px 8px #8B8B8B;
+    animation: sidenav 0.5s forwards ease-out;
 }
 
 li a.sidenav {
@@ -96,6 +103,8 @@ li a.sidenav:hover {
     box-shadow: 0 0px 8px #8B8B8B;
     transition-duration: 0.4s;
 }
+
+/* 纠正页内锚点偏移 */
 
 .offset {
     margin-top: -3em;
@@ -190,5 +199,32 @@ table th {
     }
     ul.sidenav {
         visibility: hidden;
+    }
+}
+
+@keyframes body {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes topnav {
+    from {
+        top: -20%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes sidenav {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 80%;
     }
 }
