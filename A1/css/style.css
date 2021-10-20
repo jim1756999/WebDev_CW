@@ -204,6 +204,12 @@ code {
     ul.sidenav {
         visibility: hidden;
     }
+    .footer {
+        width: 100%;
+    }
+    code {
+        margin-right: 4em;
+    }
 }
 
 /* @keyframes body {
