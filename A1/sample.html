@@ -5,16 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/vs2015.min.css">
+    <script src="./js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <title>Sample</title>
-    <!-- 引入highlight.js -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 </head>
 
 <body>
-    <div>
-        <h1>Sample</h1>
+    <header>
+        <!-- 导航栏 -->
+        <div id="topnav">
+            <ul class="topnav">
+                <li>
+                    <h1 onclick="location.reload()">Assessment 1</h1>
+                </li>
+                <li class="right"><a class="active" href="./sample.html"><i class="fa fa-code"></i>&nbsp;&nbsp;Sample</a></li>
+                <li class="right"><a href="./design.html"><i class="fa fa-pencil-square"></i>&nbsp;&nbsp;Design</a></li>
+                <li class="right"><a href="./introduciton.html"><i
+                            class="fa fa-file-text"></i>&nbsp;&nbsp;Introduction</a></li>
+                <li class="right"><a href="./index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Index</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidenav">
+            <ul class="sidenav">
+                <div id="context">
+                    <li><a class="sidenav" href="#outline">Outline</a></li>
+                    <li><a class="sidenav" href="#external_links">External Links</a></li>
+                    <li><a class="sidenav" href="#a">a</a></li>
+                </div>
+                <div id="filler"><br><br><br><br><br></div>
+            </ul>
+        </div>
+    </header>
+
+    <div class="offset" id="outline">
+        <h1 class="heading_banner">Sample</h1>
     </div>
+
+    <div>
+        <pre><code class="language-html">&lt;html&gt;</code></pre>
+    </div>
+    <footer>
+        <p class="footer">Created by Jiang Xiaoming in 2021</p>
+    </footer>
 </body>
 
 </html>
