@@ -140,10 +140,16 @@ h2 {
 p {
     margin-left: 2.5em;
     margin-right: calc(20% + 2em);
+    margin-bottom: 0em;
 }
 
 ul {
     margin-left: 2.5em;
+}
+
+.list {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
 }
 
 .button {
