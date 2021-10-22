@@ -1,3 +1,4 @@
+<!-- sample code for home page -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +6,280 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="The index page of this website.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        body {
+            margin: 0;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            color: #111;
+            background-color: #FCFCFC;
+            letter-spacing: 0.03em;
+            font-display: swap
+        }
+
+        /* 顶部工具栏 */
+
+        ul.topnav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 100;
+            list-style-type: none;
+            background-color: #E8E7E3;
+            box-shadow: 0px 2px 3px #888;
+        }
+
+        ul.topnav li {
+            float: left;
+        }
+
+        ul.topnav h1 {
+            display: block;
+            text-align: center;
+            color: #4E4D4C;
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: x-large;
+            text-shadow: 1px 1px 3px #DDD;
+            user-select: none;
+        }
+
+        ul.topnav li a {
+            display: block;
+            color: #4E4D4C;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+            font-size: large;
+            transition-duration: 0.4s;
+        }
+
+        ul.topnav li a:hover:not(.active) {
+            background-color: #8B8B8B;
+            color: #E8E7E3;
+            box-shadow: 0 0 8px #8B8B8B;
+            transition-duration: 0.4s;
+        }
+
+        ul.topnav li a.active {
+            background-color: #3F3F3F;
+            color: #E8E7E3;
+            box-shadow: 0 0 8px #8B8B8B;
+        }
+
+        ul.topnav li.right {
+            float: right;
+        }
+
+        /* 侧边工具栏 */
+
+        ul.sidenav {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 1%;
+            padding-top: 8em;
+            width: 20%;
+            background-color: #f1f1f1;
+            position: fixed;
+            left: 80%;
+            height: 100%;
+            overflow: auto;
+            z-index: 99;
+            box-shadow: 0 0px 8px #8B8B8B;
+            animation: sidenav 0.1s forwards ease-out;
+        }
+
+        li a.sidenav {
+            display: block;
+            color: #4E4D4C;
+            padding: 0.4em 0.8em;
+            margin-right: 10%;
+            margin-top: 0;
+            margin-bottom: 0;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition-duration: 0.4s;
+        }
+
+        li a.sidenav:hover {
+            border-radius: 3px;
+            background-color: #8B8B8B;
+            color: #E8E7E3;
+            box-shadow: 0 0px 8px #8B8B8B;
+            transition-duration: 0.4s;
+        }
+
+        /* 纠正页内锚点偏移 */
+
+        .offset {
+            margin-top: -3em;
+            padding-top: 3em;
+        }
+
+        .button_right {
+            position: relative;
+            margin-left: 65%;
+            transition-duration: 0.4s;
+        }
+
+        .heading_banner {
+            height: auto;
+            margin-top: 3em;
+            margin-left: 1em;
+        }
+
+        .link {
+            color: #E8E7E3;
+            text-decoration: none;
+        }
+
+        .heading {
+            height: auto;
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+
+        h2 {
+            height: auto;
+            margin-top: 1em;
+            margin-left: 2em;
+        }
+
+        p {
+            margin-left: 3em;
+            margin-right: calc(20% + 2em);
+            margin-bottom: 0em;
+        }
+
+        ul {
+            margin-left: 2.5em;
+        }
+
+        .list {
+            padding-top: 0.1em;
+            padding-bottom: 0.1em;
+        }
+
+        .button {
+            background-color: #3F3F3F;
+            border: none;
+            border-radius: 8px;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            box-shadow: 0 0 8px #8B8B8B;
+            padding: 0.4em 0.8em;
+            text-align: center;
+            text-decoration: none;
+            color: #E8E7E3;
+            display: inline-block;
+            font-size: 1.3em;
+            transition-duration: 0.4s;
+        }
+
+        .button:hover {
+            transition-duration: 0.4s;
+            background-color: #8B8B8B;
+            color: #f1f1f1;
+            box-shadow: 0 0 2px #8B8B8B
+        }
+
+        table {
+            border: 1px solid black;
+            margin-left: 4em;
+        }
+
+        table th {
+            display: block;
+            text-align: center;
+        }
+
+        code {
+            position: relative;
+            margin-left: 2em;
+            margin-right: calc(20% + 2em);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        i {
+            margin-right: 1ch;
+        }
+
+        footer {
+            color: #747474;
+            position: relative;
+            width: 80%;
+            margin-left: 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        @media screen and (max-width: 720px) {
+            ul.topnav {
+                position: relative;
+            }
+
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+
+            ul.topnav h1 {
+                font-size: 1.5em;
+                height: 0.6em;
+            }
+
+            ul.topnav li a {
+                padding: 10px 8px;
+            }
+
+            .heading_banner {
+                margin-top: 1em;
+            }
+
+            ul.sidenav {
+                visibility: hidden;
+            }
+
+            footer {
+                width: 100%;
+            }
+
+            code {
+                margin-right: 4em;
+            }
+
+            p {
+                margin-left: 2.5em;
+                margin-right: 2em;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .button_right {
+                position: relative;
+                margin-left: 60%;
+                transition-duration: 0.4s;
+            }
+        }
+
+        @keyframes sidenav {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: 80%;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/vs2015.min.css">
-    <script src="./js/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    <title>Sample</title>
+    <title>Index</title>
 </head>
 
 <body>
@@ -18,302 +287,118 @@
         <div id="topnav">
             <ul class="topnav">
                 <li>
-                    <h1 onclick="location.reload()">Assessment 1</h1>
+                    <h1></h1>
                 </li>
-                <li class="right"><a class="active" href="./sample.html"><i class="fa fa-code"></i>Sample</a></li>
-                <li class="right"><a href="./design.html"><i class="fa fa-pencil-square"></i>Design</a></li>
-                <li class="right"><a href="./introduciton.html"><i class="fa fa-file-text"></i>Introduction</a></li>
-                <li class="right"><a href="./index.html"><i class="fa fa-home"></i>Index</a>
+                <li class="right"><a href="#"><i class="fa fa-code"></i></a></li>
+                <li class="right"><a href="#"><i class="fa fa-pencil-square"></i></a></li>
+                <li class="right"><a href="#"><i class="fa fa-file-text"></i></a></li>
+                <li class="right"><a class="active" href="#"><i class="fa fa-home"></i></a>
                 </li>
             </ul>
         </div>
         <div class="sidenav">
             <ul class="sidenav">
                 <div id="context">
-                    <li><a class="sidenav" href="#html">HTML</a></li>
-                    <li><a class="sidenav" href="#css">CSS</a></li>
+                    <li><a class="sidenav" href="#"></a></li>
+                    <li><a class="sidenav" href="#"></a></li>
                 </div>
                 <div id="filler"><br><br><br><br><br></div>
             </ul>
         </div>
     </header>
-
-    <div class="offset" id="html">
-        <h1 class="heading_banner">HTML</h1>
-        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;link rel="stylesheet" href="./css/style.css"&gt;
-    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;div id="topnav"&gt;
-            &lt;ul class="topnav"&gt;
-                &lt;li&gt;
-                    &lt;h1&gt;Assessment 1&lt;/h1&gt;
-                &lt;/li&gt;
-                &lt;li class="right"&gt;&lt;a href="./sample.html"&gt;&lt;i class="fa fa-code"&gt;&lt;/i&gt;&nbsp;&nbsp;Sample&lt;/a&gt;&lt;/li&gt;
-                &lt;li class="right"&gt;&lt;a href="./design.html"&gt;&lt;i class="fa fa-pencil-square"&gt;&lt;/i&gt;&nbsp;&nbsp;Design&lt;/a&gt;&lt;/li&gt;
-                &lt;li class="right"&gt;&lt;a href="./introduciton.html"&gt;&lt;i
-                            class="fa fa-file-text"&gt;&lt;/i&gt;&nbsp;&nbsp;Introduction&lt;/a&gt;&lt;/li&gt;
-                &lt;li class="right"&gt;&lt;a class="active" href="./index.html"&gt;&lt;i class="fa fa-home"&gt;&lt;/i&gt;&nbsp;&nbsp;Index&lt;/a&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class="sidenav"&gt;
-            &lt;ul class="sidenav"&gt;
-                &lt;div id="context"&gt;
-                    &lt;li&gt;&lt;a class="sidenav" href="#context"&gt;context&lt;/a&gt;&lt;/li&gt;
-                &lt;/div&gt;
-                &lt;div id="filler"&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/header&gt;
-
-    &lt;div class="offset" id="context"&gt;
-        &lt;h1 class="heading_banner"&gt;Template&lt;/h1&gt;
-    &lt;/div&gt;
-
-    &lt;footer&gt;
-        &lt;p class="footer"&gt;Created by Jiang Xiaoming in 2021&lt;/p&gt;
-    &lt;/footer&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;</code></pre>
+    <div class="offset" id="overview">
+        <h1 class="heading_banner"></h1>
+        <p></p>
     </div>
-    <div class="offset" id="css">
-        <h1 class="heading">CSS</h1>
-        <pre><code class="language-css">body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #111;
-    background-color: #FCFCFC;
-}
-
-ul.topnav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    z-index: 100;
-    list-style-type: none;
-    background-color: #E8E7E3;
-    box-shadow: 0px 2px 3px #888;
-}
-
-ul.topnav li {
-    float: left;
-}
-
-ul.topnav h1 {
-    display: block;
-    text-align: center;
-    color: #4E4D4C;
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: x-large;
-    text-shadow: 1px 1px 3px #DDD;
-    user-select: none;
-}
-
-ul.topnav li a {
-    display: block;
-    color: #4E4D4C;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: large;
-    transition-duration: 0.4s;
-}
-
-ul.topnav li a:hover:not(.active) {
-    background-color: #8B8B8B;
-    color: #E8E7E3;
-    box-shadow: 0 0 8px #8B8B8B;
-    transition-duration: 0.4s;
-}
-
-ul.topnav li a.active {
-    background-color: #3F3F3F;
-    color: #E8E7E3;
-    box-shadow: 0 0 8px #8B8B8B;
-}
-
-ul.topnav li.right {
-    float: right;
-}
-
-ul.sidenav {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 1%;
-    padding-top: 8em;
-    width: 20%;
-    background-color: #f1f1f1;
-    position: fixed;
-    left: 80%;
-    height: 100%;
-    overflow: auto;
-    z-index: 99;
-    box-shadow: 0 0px 8px #8B8B8B;
-    animation: sidenav 0.1s forwards ease-out;
-}
-
-li a.sidenav {
-    display: block;
-    color: #4E4D4C;
-    padding: 0.4em 0.8em;
-    margin-right: 10%;
-    margin-top: 0;
-    margin-bottom: 0;
-    border-radius: 3px;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition-duration: 0.4s;
-}
-
-li a.sidenav:hover {
-    border-radius: 3px;
-    background-color: #8B8B8B;
-    color: #E8E7E3;
-    box-shadow: 0 0px 8px #8B8B8B;
-    transition-duration: 0.4s;
-}
-
-.offset {
-    margin-top: -3em;
-    padding-top: 3em;
-}
-
-.heading_banner {
-    height: auto;
-    margin-top: 3em;
-    margin-left: 1em;
-}
-
-.link {
-    color: #E8E7E3;
-    text-decoration: none;
-}
-
-.heading {
-    height: auto;
-    margin-top: 1em;
-    margin-left: 1em;
-}
-
-h2 {
-    height: auto;
-    margin-top: 1em;
-    margin-left: 2em;
-}
-
-p {
-    margin-left: 2em;
-    margin-right: calc(20% + 2em);
-}
-
-.button {
-    background-color: #3F3F3F;
-    border: none;
-    border-radius: 8px;
-    margin: 1em 0em 1em 2.5em;
-    box-shadow: 0 0 8px #8B8B8B;
-    padding: 0.4em 0.8em;
-    text-align: center;
-    text-decoration: none;
-    color: #E8E7E3;
-    display: inline-block;
-    font-size: 1.3em;
-    transition-duration: 0.4s;
-}
-
-.button:hover {
-    transition-duration: 0.4s;
-    background-color: #8B8B8B;
-    color: #f1f1f1;
-    box-shadow: 0 0 2px #8B8B8B
-}
-
-table {
-    border: 1px solid black;
-    margin-left: 4em;
-}
-
-table th {
-    display: block;
-    text-align: center;
-}
-
-code {
-    position: relative;
-    margin-left: 2em;
-    margin-right: calc(20% + 2em);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-i{
-    margin-right: 1ch;
-}
-
-.footer {
-    color: #8B8B8B;
-    position: relative;
-    width: 80%;
-    margin-left: 0;
-    text-align: center;
-    font-size: 0.9em;
-}
-
-@media screen and (max-width: 720px) {
-    ul.topnav {
-        position: relative;
-    }
-    ul.topnav li.right, ul.topnav li {
-        float: none;
-    }
-    ul.topnav h1 {
-        font-size: 1.5em;
-        height: 0.6em;
-    }
-    ul.topnav li a {
-        padding: 10px 8px;
-    }
-    .heading_banner {
-        margin-top: 1em;
-    }
-    ul.sidenav {
-        visibility: hidden;
-    }
-    .footer {
-        width: 100%;
-    }
-    code {
-        margin-right: 4em;
-    }
-}
-
-@keyframes sidenav {
-    from {
-        left: 100%;
-    }
-    to {
-        left: 80%;
-    }
-}</code></pre>
+    <div class="offset" id="external_links">
+        <h1 class="heading"></h1>
+        <h2></h2>
+        <p></p>
+        <a class="button button_right" href="#"><i class="fa fa-external-link-square"></i>VISIT</a>
+        <h2></h2>
+        <p></p>
+        <a class="button button_right" href="#"><i class="fa fa-external-link-square"></i>VISIT</a>
     </div>
     <footer>
         <p class="footer">Created by Jiang Xiaoming in 2021</p>
+        <br>
     </footer>
+</body>
+
+</html>
+
+<!-- sample code for one other page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The design concept of this website.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <title>Design</title>
+</head>
+
+<body>
+    <header>
+        <div id="topnav">
+            <ul class="topnav">
+                <li>
+                    <h1>Assessment 1</h1>
+                </li>
+                <li class="right"><a href="#"><i class="fa fa-code"></i></a></li>
+                <li class="right"><a class="active" href="./design.html"><i class="fa fa-pencil-square"></i></a>
+                </li>
+                <li class="right"><a href="#"><i class="fa fa-file-text"></i></a></li>
+                <li class="right"><a href="#"><i class="fa fa-home"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="offset" id="content">
+        <img class="heading_banner" src="https://unsplash.com" style="width: 100%;">
+        <h1>Heading</h1>
+        <p></p>
+        <p></p>
+        <p></p>
+        <img class="illustration" src="">
+        <p></p>
+        <p></p>
+        <table>
+            <table border="1">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+        </table>
+        <p></p>
+    </div>
+    <br>
+
+    <footer>Created by Jiang Xiaoming in 2021</footer>
+    <br>
 </body>
 
 </html>
