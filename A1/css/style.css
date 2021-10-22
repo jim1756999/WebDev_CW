@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     color: #111;
     background-color: #FCFCFC;
+    letter-spacing: 0.03em;
+    font-display: swap
 }
 
 /* 顶部工具栏 */
@@ -138,7 +142,7 @@ h2 {
 }
 
 p {
-    margin-left: 2.5em;
+    margin-left: 3em;
     margin-right: calc(20% + 2em);
     margin-bottom: 0em;
 }
@@ -196,8 +200,8 @@ i {
     margin-right: 1ch;
 }
 
-.footer {
-    color: #8B8B8B;
+footer {
+    color: #747474;
     position: relative;
     width: 80%;
     margin-left: 0;
@@ -225,7 +229,7 @@ i {
     ul.sidenav {
         visibility: hidden;
     }
-    .footer {
+    footer {
         width: 100%;
     }
     code {
