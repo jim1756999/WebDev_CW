@@ -90,7 +90,7 @@ ul.topnav li ul li {
     list-style: none;
 }
 
-ul.topnav li ul li a{
+ul.topnav li ul li a {
     border-radius: 3px;
 
     text-decoration: none;
@@ -185,6 +185,11 @@ p {
 
 ul {
     margin-left: 2.5em;
+}
+
+img {
+    width: calc(100% - 16px);
+    margin: 8px;
 }
 
 .list {
