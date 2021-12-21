@@ -1,0 +1,16 @@
+p {
+    margin-right: 3em;
+}
+
+code {
+    margin-right: 3em;
+}
+
+footer {
+    width: 100%;
+}
+
+.button_right {
+    position: relative;
+    margin-left: 80%;
+}

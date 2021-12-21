@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(./roboto-fonts-css2.css);
+@import url(./fontawesome/all.min.css);
 
 body {
     margin: 0;
@@ -9,9 +10,10 @@ body {
     font-display: swap
 }
 
-/* 顶部工具栏 */
+/* top navigation bar 顶部工具栏 */
 
 ul.topnav {
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -66,7 +68,41 @@ ul.topnav li.right {
     float: right;
 }
 
-/* 侧边工具栏 */
+/* second level top navigation bar 顶部工具栏二级菜单 */
+
+ul.topnav li ul {
+    margin-right: 3em;
+    display: none;
+}
+
+ul.topnav li:hover ul {
+    background-color: #E8E7E3;
+    left: 0%;
+    width: 100%;
+    position: fixed;
+    display: block;
+    margin: 0;
+    padding-left: 0;
+}
+
+ul.topnav li ul li {
+    float: right;
+    list-style: none;
+}
+
+ul.topnav li ul li a{
+    border-radius: 3px;
+
+    text-decoration: none;
+    padding: 8px 24px;
+    margin: 8px 12px;
+}
+
+
+
+
+/* ----------------------------------------- */
+/* side bar 侧边工具栏 */
 
 ul.sidenav {
     list-style-type: none;
@@ -197,7 +233,7 @@ code {
 }
 
 i {
-    margin-right: 1ch;
+    margin-right: 0.5ch;
 }
 
 footer {
@@ -213,28 +249,32 @@ footer {
     ul.topnav {
         position: relative;
     }
+
     ul.topnav li.right, ul.topnav li {
         float: none;
     }
+
     ul.topnav h1 {
         font-size: 1.5em;
         height: 0.6em;
     }
-    ul.topnav li a {
-        padding: 10px 8px;
-    }
+
     .heading_banner {
         margin-top: 1em;
     }
+
     ul.sidenav {
         visibility: hidden;
     }
+
     footer {
         width: 100%;
     }
+
     code {
         margin-right: 4em;
     }
+
     p {
         margin-left: 2.5em;
         margin-right: 2em;
@@ -272,6 +312,7 @@ footer {
     from {
         left: 100%;
     }
+
     to {
         left: 80%;
     }
