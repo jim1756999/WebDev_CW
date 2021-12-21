@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found</title>
+    <style>
+        body {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            user-select: none;
+        }
+
+        h1 {
+            position: relative;
+            left: 4em;
+            right: 0;
+            margin-right: -4em;
+            padding-right: 4em;
+            top: 3em;
+            overflow: auto;
+            animation: 1s h1 forwards;
+            animation-timing-function: ease-out;
+        }
+
+        p {
+            position: relative;
+            left: 6.5em;
+            right: 0;
+            margin-right: -6.5em;
+            padding-right: 6.5em;
+            top: 6em;
+            font-size: 1.5em;
+            overflow: auto;
+            animation: 1.5s p forwards;
+            animation-timing-function: ease-out;
+        }
+
+        a {
+            position: relative;
+            border-radius: 8px;
+            left: 24em;
+            right: 0;
+            margin-right: -6.5em;
+            padding-right: 6.5em;
+            padding: 0.4em 0.8em;
+            top: 6em;
+            font-size: 1.5em;
+            color: #8B8B8B;
+            text-decoration: none;
+            overflow: auto;
+            transition-duration: 0.4s;
+            opacity: 0;
+            animation: 1s p forwards;
+            animation-delay: 0.8s;
+            animation-timing-function: ease-out;
+        }
+
+        a:hover {
+            transition-duration: 0.4s;
+            background-color: #8B8B8B;
+            color: #f1f1f1;
+            box-shadow: 0 0 8px #8B8B8B
+        }
+
+        @keyframes h1 {
+            from {
+                top: -1em;
+                opacity: 0;
+            }
+
+            to {
+                top: 4em;
+                opacity: 1;
+            }
+        }
+
+        @keyframes p {
+            from {
+                top: 7em;
+                opacity: 0;
+            }
+
+            to {
+                top: 6em;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The page you're looking for can't be found.</h1>
+    <p>404. There may be some issues.</p>
+    <p>Please check the url or contact me.</p>
+    <br><br><br>
+    <a style="left: 55%;" href="https://developer.mozilla.org/docs/Web/HTTP/Status/404">What is this?</a>
+    <a style="left: 70%;" href="./index.html">Go To Homepage</a>
+</body>
+
+</html>
