@@ -10,10 +10,13 @@ body {
     font-display: swap
 }
 
+a {
+    text-decoration: none;
+}
+
 /* top navigation bar 顶部工具栏 */
 
 ul.topnav {
-
     position: fixed;
     top: 0;
     width: 100%;
@@ -46,7 +49,6 @@ ul.topnav li a {
     color: #4E4D4C;
     text-align: center;
     padding: 20px 16px;
-    text-decoration: none;
     font-size: large;
     transition-duration: 0.4s;
 }
@@ -92,16 +94,12 @@ ul.topnav li ul li {
 
 ul.topnav li ul li a {
     border-radius: 3px;
-
-    text-decoration: none;
     padding: 8px 24px;
     margin: 8px 12px;
 }
 
-
-
-
 /* ----------------------------------------- */
+
 /* side bar 侧边工具栏 */
 
 ul.sidenav {
@@ -128,7 +126,6 @@ li a.sidenav {
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 3px;
-    text-decoration: none;
     font-size: 1.2em;
     transition-duration: 0.4s;
 }
@@ -139,6 +136,26 @@ li a.sidenav:hover {
     color: #E8E7E3;
     box-shadow: 0 0px 8px #8B8B8B;
     transition-duration: 0.4s;
+}
+
+/* 侧边滚动栏 */
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #3F3F3F;
+}
+
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: #E8E7E3;
 }
 
 /* 纠正页内锚点偏移 */
@@ -162,7 +179,6 @@ li a.sidenav:hover {
 
 .link {
     color: #E8E7E3;
-    text-decoration: none;
 }
 
 .heading {
@@ -206,7 +222,6 @@ img {
     box-shadow: 0 0 8px #8B8B8B;
     padding: 0.4em 0.8em;
     text-align: center;
-    text-decoration: none;
     color: #E8E7E3;
     display: inline-block;
     font-size: 1.3em;
@@ -255,7 +270,8 @@ footer {
         position: relative;
     }
 
-    ul.topnav li.right, ul.topnav li {
+    ul.topnav li.right,
+    ul.topnav li {
         float: none;
     }
 
