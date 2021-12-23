@@ -1,3 +1,5 @@
+/*  导入roboto
+    导入fontawesome */
 @import url(./roboto-fonts-css2.css);
 @import url(./fontawesome/all.min.css);
 
@@ -13,6 +15,10 @@ body {
 a {
     text-decoration: none;
 }
+
+/* ----------------------------------------- */
+/* -----------顶栏/侧边栏/滚动条------------- */
+/* ----------------------------------------- */
 
 /* top navigation bar 顶部工具栏 */
 
@@ -101,7 +107,6 @@ ul.topnav li ul li a {
 /* ----------------------------------------- */
 
 /* side bar 侧边工具栏 */
-
 ul.sidenav {
     list-style-type: none;
     margin: 0;
@@ -138,47 +143,44 @@ li a.sidenav:hover {
     transition-duration: 0.4s;
 }
 
+/* ----------------------------------------- */
+
 /* 侧边滚动栏 */
+/*滚动条整体样式*/
 ::-webkit-scrollbar {
-    /*滚动条整体样式*/
     width: 10px;
 }
 
+/*滚动条里面小方块*/
 ::-webkit-scrollbar-thumb {
-    /*滚动条里面小方块*/
     border-radius: 10px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     background: #3F3F3F;
 }
 
+/*滚动条里面轨道*/
 ::-webkit-scrollbar-track {
-    /*滚动条里面轨道*/
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     background: #E8E7E3;
 }
 
 /* 纠正页内锚点偏移 */
-
 .offset {
     margin-top: -3em;
     padding-top: 3em;
 }
 
-.button_right {
-    position: relative;
-    margin-left: 65%;
-    transition-duration: 0.4s;
-}
+/* --------------内容布局------------------- */
+/*  index
+文本    图片    按钮    表格    代码
+ */
 
+/* 第一个标题 */
 .heading_banner {
     height: auto;
     margin-top: 3em;
     margin-left: 1em;
-}
-
-.link {
-    color: #E8E7E3;
 }
 
 .heading {
@@ -228,6 +230,12 @@ img {
     transition-duration: 0.4s;
 }
 
+.button_right {
+    position: relative;
+    margin-left: 65%;
+    transition-duration: 0.4s;
+}
+
 .button:hover {
     transition-duration: 0.4s;
     background-color: #8B8B8B;
@@ -264,6 +272,8 @@ footer {
     text-align: center;
     font-size: 0.9em;
 }
+
+/* --------------自适应------------------- */
 
 @media screen and (max-width: 720px) {
     ul.topnav {
@@ -307,27 +317,10 @@ footer {
         position: relative;
         margin-left: 60%;
         transition-duration: 0.4s;
-    }
+    } 
 }
 
-/* @keyframes body {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-@keyframes topnav {
-    from {
-        top: -20%;
-    }
-    to {
-        top: 0;
-    }
-} */
+/* --------------动画------------------- */
 
 @keyframes sidenav {
     from {
