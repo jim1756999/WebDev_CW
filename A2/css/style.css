@@ -200,7 +200,6 @@ h2 {
 p {
     margin-left: 3em;
     margin-right: calc(20% + 2em);
-    margin-bottom: 0em;
 }
 
 ul {
@@ -255,6 +254,70 @@ table th {
     text-align: center;
 }
 
+form {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 1em auto;
+    margin-bottom: 0;
+}
+
+.form_float {
+    display: block;
+    position: relative;
+    float: left;
+    width: 40%;
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+input {
+    height: 1.5em;
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #8B8B8B;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    z-index: 2;
+}
+
+label.input_text {
+    display: block;
+    position: relative;
+    top: -1.5em;
+    color: #747474;
+    font-size: 1em;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 1em;
+}
+
+input:focus, input:valid {
+    outline: none;
+    border-bottom: 1px solid #00bbff;
+}
+
+input:focus+label.input_text, input:valid+label.input_text {
+    top: -3.5em;
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+    color: #00bbff;
+}
+
+.submit {
+    float: right;
+    display: block;
+    position: relative;
+    width: 20%;
+    margin-top: 0em;
+    margin: 1em 3em;
+    height: auto;
+    margin-bottom: 1em;
+}
+
 code {
     position: relative;
     margin-left: 2em;
@@ -264,6 +327,13 @@ code {
 
 i {
     margin-right: 0.5ch;
+}
+
+hr {
+    width: 95%;
+    border: none;
+    height: 1px;
+    background-color: #DDD;
 }
 
 footer {
