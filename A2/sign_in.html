@@ -41,25 +41,52 @@
     <div class="offset" id="overview">
         <h1 class="heading_banner">Application Form</h1>
         <p>Fill out the form to participate in the events.</p>
-        <form name="application" onsubmit="check()">
+        <form name="application" onsubmit="submit()">
             <div class="form_float">
-                <input type="text" name="firstname" required>
+                <input class="text" type="text" id="firstname" name="firstname" required>
                 <label class="input_text" for="firstname">Firstname</label>
-                <input type="text" name="phone" required>
+                <input class="text" type="tel" id="phone" name="phone" required>
                 <label class="input_text" for="phone">Phone</label>
-                <input type="radio" name="sex" value="male" required>
-                <label>Male</label>
-                <input type="radio" name="sex" value="female" required><label>Female</label>
+                <label class="head">Gender</label>
+                <div class="radio_container">
+                    <div class="floatleft">
+                        <input class="radioandcheckbox" id="male" type="radio" name="sex" value="male" required>
+                        <label class="radioandcheckbox" for="male">Male</label>
+                    </div>
+                    <div class="floatleft">
+                        <input class="radioandcheckbox" id="female" type="radio" name="sex" value="female" required>
+                        <label class="radioandcheckbox" for="female">Female</label>
+                    </div>
+                    <div class="floatleft">
+                        <input class="radioandcheckbox" id="others" type="radio" name="sex" value="others" required>
+                        <label class="radioandcheckbox" for="others">Others</label>
+                    </div>
+                </div>
+                <div style="margin-top: 4em">
+                    <label class="head">Date</label>
+                    <input class="text" style="height: 2.5em; color: #8B8B8B;" type="date" id="date" name="date"
+                        required>
+                </div>
             </div>
             <div class="form_float">
-                <input type="text" name="lastname" required>
+                <input class="text" type="text" id="lastname" name="lastname" required>
                 <label class="input_text" for="lastname">Lastname</label>
-                <input type="text" id="address" name="address" required>
+                <input class="text" type="email" id="email" name="email" required>
+                <label class="input_text" for="email">E-mail</label>
+                <input class="text" type="text" id="address" name="address" required>
                 <label class="input_text" for="address">Address</label>
-            </div>
-            <div class="submit">
-                <input class="button" style="height: 2em; border: none;" type="submit" value="Submit">
-            </div>
+                <input class="text" type="number" id="age" name="age" required>
+                <label class="input_text" for="age">Age</label>
+                <label class="head">Events</label>
+                <div class="radio_container">
+                    <div class="floatleft">
+                        <input class="radioandcheckbox" id="dance" type="checkbox" name="event" value="dance" required>
+                        <label class="radioandcheckbox" for="dance">Dance</label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input class="button" style="height: 2em; border: none;" type="submit" value="Submit">
+                </div>
         </form>
     </div>
     <hr>

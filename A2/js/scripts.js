@@ -15,11 +15,7 @@ function keep_hover_leave() {
 
 // TODO unable to get value
 
-function check() {
+function submit() {
     var v = document.forms["application"]["address"].value;
-    // if (v.length == "1100");
-        console.log(v);
-        document.write(v);
-        console.log("a");
-        return true
+    
 }

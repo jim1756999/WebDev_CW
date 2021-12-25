@@ -173,6 +173,10 @@ li a.sidenav:hover {
     padding-top: 3em;
 }
 
+.floatleft {
+    float: left;
+}
+
 /* --------------内容布局------------------- */
 /*  index
 文本    图片    按钮    表格    代码
@@ -271,7 +275,7 @@ form {
     margin-bottom: 0;
 }
 
-input {
+input.text {
     height: 1.5em;
     display: block;
     position: relative;
@@ -295,16 +299,40 @@ label.input_text {
     margin-bottom: 1em;
 }
 
-input:focus, input:valid {
+input.text:focus, input.text:valid {
     outline: none;
     border-bottom: 1px solid #00bbff;
 }
 
-input:focus+label.input_text, input:valid+label.input_text {
+input.text:focus+label.input_text, input.text:valid+label.input_text {
     top: -3.5em;
     font-size: 0.8em;
     margin-bottom: 1.5em;
     color: #00bbff;
+}
+
+/* radio is used for layout, on radio and checkbox */
+
+.radio_container {
+    margin-top: 1em;
+    margin-top: 1em;
+}
+
+input.radioandcheckbox {
+    color: #747474;
+}
+
+label.radioandcheckbox {
+    margin-right: 1em;
+    color: #747474;
+}
+
+form .head {
+    color: #747474;
+}
+
+.date {
+    margin-top: 1em;
 }
 
 .submit {
@@ -340,6 +368,7 @@ footer {
     color: #747474;
     position: relative;
     width: 80%;
+    margin-top: 1em;
     margin-left: 0;
     text-align: center;
     font-size: 0.9em;
