@@ -211,8 +211,22 @@ ul {
 }
 
 img {
-    width: calc(100% - 16px);
-    margin: 8px;
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+}
+
+.wrapper {
+    width: calc(80% - 8px);
+}
+
+video {
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    margin: 2em auto;
+    width: 60%;
+    box-shadow: 0 0 8px #8B8B8B;
 }
 
 .list {
@@ -248,103 +262,9 @@ img {
     box-shadow: 0 0 2px #8B8B8B
 }
 
-table {
-    border: 1px solid black;
-    margin-left: 4em;
-}
 
-table th {
-    display: block;
-    text-align: center;
-}
 
-form {
-    display: block;
-    position: relative;
-    width: 90%;
-    margin: 1em auto;
-    margin-bottom: 0;
-}
 
-.form_float {
-    display: block;
-    position: relative;
-    float: left;
-    width: 40%;
-    margin: 5%;
-    margin-bottom: 0;
-}
-
-input.text {
-    height: 1.5em;
-    display: block;
-    position: relative;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #8B8B8B;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1em;
-    z-index: 2;
-}
-
-label.input_text {
-    display: block;
-    position: relative;
-    top: -1.5em;
-    color: #747474;
-    font-size: 1em;
-    z-index: 1;
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 1em;
-}
-
-input.text:focus, input.text:valid {
-    outline: none;
-    border-bottom: 1px solid #00bbff;
-}
-
-input.text:focus+label.input_text, input.text:valid+label.input_text {
-    top: -3.5em;
-    font-size: 0.8em;
-    margin-bottom: 1.5em;
-    color: #00bbff;
-}
-
-/* radio is used for layout, on radio and checkbox */
-
-.radio_container {
-    margin-top: 1em;
-    margin-top: 1em;
-}
-
-input.radioandcheckbox {
-    color: #747474;
-}
-
-label.radioandcheckbox {
-    margin-right: 1em;
-    color: #747474;
-}
-
-form .head {
-    color: #747474;
-}
-
-.date {
-    margin-top: 1em;
-}
-
-.submit {
-    float: right;
-    display: block;
-    position: relative;
-    width: 20%;
-    margin-top: 0em;
-    margin: 1em 3em;
-    height: auto;
-    margin-bottom: 1em;
-}
 
 code {
     position: relative;
