@@ -8,11 +8,15 @@
     <meta name="description" content="The index page of this website.">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/no_sidebar.css">
+    <style>
+        body {
+            background-color: grey;
+        }
+    </style>
     <title>Index</title>
 </head>
 
-<body>
-
+<body style="overflow:hidden">
     <header>
         <!-- nav bar 导航栏 -->
         <div id="topnav">
@@ -20,40 +24,39 @@
                 <li>
                     <h1>Highland Games</h1>
                 </li>
-                <li class="right"><a href="./sign_in.html" draggable="false"><i class="fas fa-sign-in-alt"></i>Sign in</a></li>
-                <li class="right"><a href="./timetable.html" draggable="false"><i class="fas fa-calendar-week"></i>Timetable</a></li>
-                <li class="right" ><a href="#" id="Introduction" draggable="false" onmouseover="keep_hover()" onmouseleave="keep_hover_leave()"><i class="fas fa-compass"></i>Information</a>
+                <li class="right"><a href="./sign_in.html" draggable="false"><i class="fas fa-sign-in-alt"></i>Sign
+                        in</a></li>
+                <li class="right"><a href="./timetable.html" draggable="false"><i
+                            class="fas fa-calendar-week"></i>Timetable</a></li>
+                <li class="right"><a href="#" id="Introduction" draggable="false" onmouseover="keep_hover()"
+                        onmouseleave="keep_hover_leave()"><i class="fas fa-compass"></i>Information</a>
                     <ul class="second" onmouseover="keep_hover()" onmouseleave="keep_hover_leave()">
                         <li><a href="./event.html" style="margin-right: 4em;" draggable="false">Event</a></li>
                         <li><a href="./history.html" draggable="false">History</a></li>
                         <li><a href="./introduction.html" draggable="false">Introduction</a></li>
                     </ul>
                 </li>
-                <li class="right"><a class="active" href="./index.html" draggable="false"><i class="fa fa-home"></i>Index</a>
+                <li class="right"><a class="active" href="./index.html" draggable="false"><i
+                            class="fa fa-home"></i>Index</a>
                 </li>
             </ul>
         </div>
     </header>
-
-    <div class="offset" id="overview">
-        <h1 class="heading_banner">Overview</h1>
-        <p>This is a site about Scottish Highland Sports. It have content of related informations and event time. </p>
+    <div class="backgroundvideo" style="z-index: 98;">
+        <video muted autoplay="autoplay"
+            src="./videos/Stone Mountain Highland games Clan Challenge Caber Toss 2021 [ymgIPGmkmc0].mp4"
+            id="bgvideo">Video cannot be played.</video>
     </div>
-    <div class="offset" id="external_links">
-        <h1 class="heading">External Links</h1>
-        <h2>BBC sports</h2>
-        <img src="C:\Users\isole\Downloads\vino-li-2sHhDv0eqFM-unsplash.jpg">
-
-        <p>Breaking news & live sports coverage including results, video, audio and analysis on Football, F1, Cricket,
-            Rugby Union, Rugby League, Golf, Tennis and all the main world sports, plus major events such as the Olympic
-            Games.</p>
-        <a class="button button_right" href="https://www.bbc.com/sport"><i
-                class="fas fa-external-link-square-alt"></i>VISIT</a>
-        <h2>Scotland ALBA</h2>
-        <p>Get all the information you need for your trip to Scotland! Book accommodation, discover new places to visit,
-            find amazing things to do and more!</p>
-        <a class="button button_right" href="https://www.visitscotland.com/see-do/events/"><i
-                class="fas fa-external-link-square-alt"></i>VISIT</a>
+    <div class="backgroundvideo" style="z-index: 99;">
+        <video muted autoplay="autoplay"
+            src="./videos/Stone Mountain Highland games Clan Challenge Caber Toss 2021 [ymgIPGmkmc0].mp4"
+            id="bgvideo">Video cannot be played.</video>
+    </div>
+    <div class="lahead">
+        <h1>HIGHLAND GAMES</h1>
+    </div>
+    <div class="lalink">
+        <a href="./introduction.html" draggable="false">EXPLORE<i class="fas fa-arrow-right" style="margin-left: 0.5ch;"></i></a>
     </div>
     <hr>
     <footer>Created by Jiang Xiaoming in 2021<a href="./info.html">Document</a></footer>

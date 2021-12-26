@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The index page of this website.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/no_sidebar.css">
+    <style>
+        table {
+            border-radius: 8px;
+            width: 80%;
+            margin: 1em auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            box-shadow: 0 0 8px #8B8B8B;
+        }
+
+        table th {
+            background-color: #3F3F3F;
+            color: #E8E7E3;
+            height: 3.5em;
+            margin: 0;
+            text-align: center;
+        }
+
+        table tr {
+            background-color: #DDD;
+            color: #111;
+            height: 2.5em;
+            margin: 0;
+            text-align: center;
+        }
+
+        table tr:first-child th:first-child {
+            border-top-left-radius: 8px;
+        }
+
+        table tr:first-child th:last-child {
+            border-top-right-radius: 8px;
+        }
+
+        table tr:last-child td:first-child {
+            border-bottom-left-radius: 8px;
+        }
+
+        table tr:last-child td:last-child {
+            border-bottom-right-radius: 8px;
+        }
+    </style>
+    <title>Timetable</title>
+</head>
+
+<body onload="startTime()">
+
+    <header>
+        <!-- nav bar 导航栏 -->
+        <div id="topnav">
+            <ul class="topnav">
+                <li>
+                    <h1>Highland Games</h1>
+                </li>
+                <li class="right"><a href="./sign_in.html" draggable="false"><i class="fas fa-sign-in-alt"></i>Sign
+                        in</a></li>
+                <li class="right"><a class="active" href="./timetable.html" draggable="false"><i
+                            class="fas fa-calendar-week"></i>Timetable</a></li>
+                <li class="right"><a href="#" id="Introduction" draggable="false" onmouseover="keep_hover()"
+                        onmouseleave="keep_hover_leave()"><i class="fas fa-compass"></i>Information</a>
+                    <ul class="second" onmouseover="keep_hover()" onmouseleave="keep_hover_leave()">
+                        <li><a href="./event.html" style="margin-right: 4em;" draggable="false">Event</a></li>
+                        <li><a href="./history.html" draggable="false">History</a></li>
+                        <li><a href="./introduction.html" draggable="false">Introduction</a></li>
+                    </ul>
+                </li>
+                <li class="right"><a href="./index.html" draggable="false"><i
+                            class="fa fa-home"></i>Index</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="offset" id="overview">
+        <h1 class="heading_banner">Timetable</h1>
+        <p>Next year you can try the highland game by yourself, enjoy and experience the fun of the game.</p><br>
+        <h2 style="font-size: 1.2em;">Next year’s events will be:</h2>
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <th>Events</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Atholl Highlanders Parade & Gathering</td>
+                    <td>28-29 May 2022</td>
+                </tr>
+                <tr style="height: 1px;">
+                    <td style="background-color: #BBB;"></td>
+                    <td style="background-color: #BBB;"></td>
+                </tr>
+                <tr>
+                    <td>Strathmore Highland Games</td>
+                    <td>12 June 2022</td>
+                </tr>
+                <tr style="height: 1px;">
+                    <td style="background-color: #BBB;"></td>
+                    <td style="background-color: #BBB;"></td>
+                </tr>
+                <tr>
+                    <td>Luss Highland Games</td>
+                    <td>2 July 2022</td>
+                </tr>
+                <tr style="height: 1px;">
+                    <td style="background-color: #BBB;"></td>
+                    <td style="background-color: #BBB;"></td>
+                </tr>
+                <tr>
+                    <td>Dundonald Highland Games</td>
+                    <td>6 August 2022</td>
+                </tr>
+                <tr style="height: 1px;">
+                    <td style="background-color: #BBB;"></td>
+                    <td style="background-color: #BBB;"></td>
+                </tr>
+                <tr>
+                    <td>Bridge of Allan Highland Games</td>
+                    <td>7 August 2022</td>
+                </tr>
+                <tr style="height: 1px;">
+                    <td style="background-color: #BBB;"></td>
+                    <td style="background-color: #BBB;"></td>
+                </tr>
+                <tr>
+                    <td>Crieff Highland Games</td>
+                    <td>21 August 2022</td>
+                </tr>
+                <tr style="height: 1px;">
+                    <td style="background-color: #BBB;"></td>
+                    <td style="background-color: #BBB;"></td>
+                </tr>
+                <tr>
+                    <td>Cowal Highland Gathering</td>
+                    <td>25 - 27 August 2022</td>
+                </tr>
+                <tr style="height: 1px;">
+                    <td style="background-color: #BBB;"></td>
+                    <td style="background-color: #BBB;"></td>
+                </tr>
+                <tr>
+                    <td>Braemar Highland Games</td>
+                    <td>3 September 2022</td>
+                </tr>
+                <tr style="height: 1px;">
+                    <td style="background-color: #BBB;"></td>
+                    <td style="background-color: #BBB;"></td>
+                </tr>
+                <tr>
+                    <td>Pitlochry Highland Games</td>
+                    <td>10 September 2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="offset" id="datecontainer">
+        <h1 class="heading">Current Time</h1>
+        <p id="Date">Current Time Here.</p>
+    </div>
+    <hr>
+    <footer>Created by Jiang Xiaoming in 2021<a href="./info.html">Document</a></footer>
+    <br>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
