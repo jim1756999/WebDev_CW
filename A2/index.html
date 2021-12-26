@@ -10,7 +10,44 @@
     <link rel="stylesheet" href="./css/no_sidebar.css">
     <style>
         body {
-            background-color: grey;
+            user-select: none;
+        }
+
+        footer {
+            z-index: 101;
+            position: fixed;
+            top: 90%;
+            color: #FFF;
+            opacity: 0.8;
+        }
+
+        footer a {
+            color: #FFF;
+            opacity: 0.9;
+        }
+
+        @media screen and (max-width: 930px) {
+            .lahead {
+                font-size: 5ch;
+            }
+        }
+
+        @media screen and (max-width: 756px) {
+            ul.topnav {
+                visibility: hidden;
+            }
+
+            hr {
+                visibility: hidden;
+            }
+
+            .lahead {
+                font-size: 4ch;
+            }
+
+            .lalink {
+                font-size: 1ch;
+            }
         }
     </style>
     <title>Index</title>
@@ -43,23 +80,22 @@
         </div>
     </header>
     <div class="backgroundvideo" style="z-index: 98;">
-        <video muted autoplay="autoplay" loop
-            src="./videos/ymgIPGmkmc0.mp4"
-            id="bgvideo_low">Video cannot be played.</video>
+        <video muted autoplay="autoplay" loop src="./videos/ymgIPGmkmc0.mp4" id="bgvideo_low">Video cannot be
+            played.</video>
     </div>
     <div class="backgroundvideo" style="z-index: 99;">
-        <video muted autoplay="autoplay" loop
-            src="./videos/ymgIPGmkmc0.mp4"
-            id="bgvideo">Video cannot be played.</video>
+        <video muted autoplay="autoplay" loop src="./videos/ymgIPGmkmc0.mp4" id="bgvideo">Video cannot be
+            played.</video>
     </div>
     <div class="lahead">
         <h1>HIGHLAND GAMES</h1>
     </div>
     <div class="lalink">
-        <a href="./introduction.html" draggable="false">EXPLORE<i class="fas fa-arrow-right" style="margin-left: 0.5ch;"></i></a>
+        <a href="./introduction.html" draggable="false">EXPLORE<i class="fas fa-arrow-right"
+                style="margin-left: 0.5ch;"></i></a>
     </div>
     <hr>
-    <footer>Created by Jiang Xiaoming in 2021<a href="./info.html">Document</a></footer>
+    <footer>Created by Jiang Xiaoming in 2021<a href="./documentation.html">Document</a></footer>
     <br>
     <script src="./js/scripts.js"></script>
 </body>

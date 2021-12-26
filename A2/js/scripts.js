@@ -87,3 +87,7 @@ function startTime() {
         return i;
     }
 }
+
+function printp() {
+    window.print()
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The index page of this website.">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/no_sidebar.css"> -->
+    <title>Documentation</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- nav bar 导航栏 -->
+        <div id="topnav">
+            <ul class="topnav">
+                <li>
+                    <h1>Highland Games</h1>
+                </li>
+                <li class="right"><a href="./sign_in.html" draggable="false"><i class="fas fa-sign-in-alt"></i>Sign
+                        in</a></li>
+                <li class="right"><a href="./timetable.html" draggable="false"><i
+                            class="fas fa-calendar-week"></i>Timetable</a></li>
+                <li class="right"><a href="#" id="Introduction" draggable="false" onmouseover="keep_hover()"
+                        onmouseleave="keep_hover_leave()"><i class="fas fa-compass"></i>Information</a>
+                    <ul class="second" onmouseover="keep_hover()" onmouseleave="keep_hover_leave()">
+                        <li><a class="active" href="./event.html" style="margin-right: 4em;" draggable="false">Event</a>
+                        </li>
+                        <li><a href="./history.html" draggable="false">History</a></li>
+                        <li><a href="./introduction.html" draggable="false">Introduction</a></li>
+                    </ul>
+                </li>
+                <li class="right"><a href="./index.html" draggable="false"><i class="fa fa-home"></i>Index</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 侧边导航栏 -->
+        <div class="sidenav">
+            <ul class="sidenav">
+                <li><a class="sidenav" href="#summary">Summary</a></li>
+                <li><a class="sidenav" href="#accessibility">Accessibility</a></li>
+                <li><a class="sidenav" href="#security">Security</a></li>
+                <li><a class="sidenav" href="#enhance">Enhancement</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="offset" id="summary">
+        <h1 class="heading_banner">Summary</h1>
+        <!-- <p>This website briefly introduces the Scottish Highland sport, its development history and several of its
+            games. It also lists famous athletes. A timetable is provided to query the time of the event. And there is a
+            registration form to fill in the information to participate in the event, so that users have the opportunity
+            to experience this sports meeting in person. A video has been inserted into this website to vividly let the
+            audience understand the Scottish Highland sport. </p> -->
+        <p>
+            To develop this website. Vscode is used as the text editor to create this side, and the viewing of the
+            website using Chrome. Git is used for version controlling, which will simplify if codes added is
+            encountering problems. Some plug-ins are also used to boost the efficiency, live-server is implied to get
+            the output in realtime, TODO Tree and formatter is also used. In this website, Roboto and Fontawesome are
+            used to make the site looks elegent with a clear font and intuitionistic icons. Lighthouse and w3 validator
+            are used to check the website.
+        </p>
+    </div>
+    <div class="offset" id="accessibility">
+        <h1 class="heading">Accessibility</h1>
+        <p>This website has a clear navigation. CSS is used to make responsive web pages, to optimised the readability
+            on mobiles or other small width devices. When cursor hovering over a button. As an indicator,
+            button will turn gery when users hover on it, to suggest them it can be clicked. Considering the there will
+            be some pictures, which are colorful, so the site uses light colours, simple but
+            can have a neat visual. This site has avoided using pure white and pure black to maintain a comfortable
+            contrast, not too large or small. This is also readable if having
+            colour blindness. The accessibility is validated by Lighthouse.</p>
+    </div>
+    <div class="offset" id="security">
+        <h1 class="heading">Security</h1>
+        <p>Security issues are mainly considered in server configuration and back-end. The main security threats are SQL
+            injection and cross-site scripting attacks. In order to protect security, in this website, the data will be
+            checked before submitting the form to prevent the data from being tampered with by externally injected
+            javascript. In addition, divide the content into a clear and reasonable level system, such as the division
+            of columns and their relationships, the level of web pages and their relationships, and the path setting of
+            links. For instance, all links in the webpage use relative paths to avoid cross-site attacks.</p>
+    </div>
+    <div class="offset" id="enhance">
+        <h1 class="heading">Enhancement</h1>
+        <p>Make the content of the website richer and add more materials, pictures and videos. Use more variety of
+            layouts in the website. Perform more accurate calculations on color contrast and layout. The web page looks
+            more concise and clear.</p>
+    </div>
+    <hr>
+    <footer>Created by Jiang Xiaoming in 2021<a href="./documentation.html">Document</a></footer>
+    <br>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
